@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.highlighted-cell {
+    background-color: #ffeb3b;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+}
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.firsttable {
+    margin-bottom: 20px;
+}
+
+.stockcodecmp {
+    background-color: lightblue;
+    text-align: center;
+}
