@@ -1,30 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../css/style.css';
+import carouserhome from '../img/cal.jpg'; // Make sure the path to your image is correct
 
-function CarouselComponent() {
-  const [carouselOptions, setCarouselOptions] = useState({
-    items: 1, // Show 1 item at a time
-    loop: true,
-    dots: true,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-  });
+const SingleSlide = () => {
+    const slideStyle = {
+        backgroundImage: `url(${carouserhome})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '70vh', // Adjust height as needed
+    };
 
-  return (
-    <div className="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-      <OwlCarousel className="owl-carousel header-carousel position-relative" {...carouselOptions}>
-        <div className="owl-carousel-item position-relative" data-dot="<img src='img/bg7.jpg'>">
-          <img className="img-fluid" src="img/bg7.jpg" alt="" />
-          {/* ... rest of the slide content  */}
+    return (
+        <div className="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div className="position-relative" style={slideStyle}>
+                <div className="carousel-inner">
+                    <div className="container mt-4 pt-5">
+                        <div className="row justify-content-start align-items-end">
+                            <div className="col-10 col-lg-8 text-white">
+                                <h5 className="display-5 animated slideInDown">TO MEET CUSTOMERS NEEDS IS OUR RESPONSIBILITY</h5>
+                                <p className="fs-5 fw-medium mb-4 pb-3">The company specializes in the Powder coating & anodizing of aluminium.</p>
+                                <a href="/" className="btn btn-secondary py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        {/* ... other slides */}
-      </OwlCarousel>
-    </div>
-  );
-}
+    );
+};
 
-export default CarouselComponent; 
+export default SingleSlide;

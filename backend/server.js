@@ -18,7 +18,7 @@ const io = socketIo(server, {
 // Initialize BreezeConnect with API keys
 const API_KEY = "4!(9v4419E95G62e5d44v45S3c366U%9";
 const API_SECRET = "4Nu4079V1506n937R4620NS!494B8996";
-const API_SESSION = "42804210";
+const API_SESSION = "43141597";
 
 const breeze = new BreezeConnect({'appKey': API_KEY});
 
